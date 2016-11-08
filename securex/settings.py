@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#print "base dir is" + BASE_DIR + "/temp/"
 
 
 # Quick-start development settings - unsuitable for production
@@ -53,7 +54,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'securex.urls'
 
 TEMPLATES = [
-    {
+    {   #'NAME': os.path.join(BASE_DIR, 'temp'),
+         #BASE_DIR + "/temp/" 
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
