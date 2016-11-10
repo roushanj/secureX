@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'article',
+    'polls',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,8 @@ TEMPLATES = [
     {   #'NAME': os.path.join(BASE_DIR, 'temp'),
          #BASE_DIR + "/temp/" 
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [  '/root/secureX/index.html',
+                  ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
