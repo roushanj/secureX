@@ -20,6 +20,7 @@ from securex.views import webpage
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^article/', include('article.urls')),
+    url(r'^polls/', include('polls.urls')),
     url(r'^', webpage),
 ]
 
