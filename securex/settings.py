@@ -55,10 +55,9 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'securex.urls'
 
 TEMPLATES = [
-    {   #'NAME': os.path.join(BASE_DIR, 'temp'),
-         #BASE_DIR + "/temp/" 
+    {  
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [  '/root/secureX/index.html',
+        'DIRS': [  '/root/secureX/templates',
                   ],
         'APP_DIRS': True,
         'OPTIONS': {

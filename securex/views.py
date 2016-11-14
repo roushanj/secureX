@@ -3,5 +3,7 @@ from django.http import HttpResponse
 
 
 def webpage(request):
-     html = "<html><body>This is the main server site <br></body></html>"
-     return HttpResponse(html)
+     #html = "<html><body>This is the main server site</body></html>"
+     
+     return render(request,"base.html")
+    
