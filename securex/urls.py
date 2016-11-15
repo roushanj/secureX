@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
-from securex.views import webpage
+from securex.views import webpage,regist
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^article/', include('article.urls')),
     url(r'^polls/', include('polls.urls')),
     url(r'^$', webpage),
+    url(r'^regist/',regist),
 ]
-
